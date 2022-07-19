@@ -51,11 +51,13 @@ jobs:
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "17.27.39"
+          automatic_release_tag: "17.27.31"
           title: "Release ${{ env.date_now }}"
           files: |
             ReVanced-v17.27.39-MagiskModule.zip
+            ReVancedMusic-v5.14.53-MagiskModule.zip
             build/revanced-nonroot-signed.apk
             vanced-microG.apk
             build/apk-SHA-256.txt
             build/MagiskModule-SHA-256.txt
+            

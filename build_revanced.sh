@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Latest compatible version of apks
-# YouTube Music 5.03.50
+# YouTube Music 5.14.53
 # YouTube 17.27.39
 # Vanced microG 0.2.24.220220
 
-YTM_VERSION="5.03.50"
+YTM_VERSION="5.14.53"
 YT_VERSION="17.27.39"
 VMG_VERSION="0.2.24.220220"
 
@@ -65,20 +65,20 @@ else
     echo "Cannot find YouTube APK, skipping build"
 fi
 
-# echo ""
-# echo "************************************"
-# echo "Building YouTube Music APK"
-# echo "************************************"
-# if [ -f "com.google.android.apps.youtube.music.apk" ]
-# then
-#    echo "Building Root APK"    echo "Building Root APK"
-#    java -jar revanced-cli.jar -b revanced-patches.jar \
-#                               -e custom-branding -e microg-support \
-#                               -a com.google.android.apps.youtube.music.apk -o build/revanced-music-root.apk
+echo ""
+echo "************************************"
+echo "Building YouTube Music APK"
+echo "************************************"
+if [ -f "com.google.android.apps.youtube.music.apk" ]
+then
+    echo "Building Root APK"
+    java -jar revanced-cli.jar -b revanced-patches.jar \
+                               -e custom-branding -e microg-support \
+                               -a com.google.android.apps.youtube.music.apk -o build/revanced-music-root.apk
 #    echo "Building Non-root APK"
 #    java -jar revanced-cli.jar -b revanced-patches.jar \
 #                               -e custom-branding \
 #                               -a com.google.android.apps.youtube.music.apk -o build/revanced-music-nonroot.apk
-# else
-#    echo "Cannot find YouTube Music APK, skipping build"
-# fi
+else
+   echo "Cannot find YouTube Music APK, skipping build"
+fi
