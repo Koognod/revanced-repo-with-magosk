@@ -55,10 +55,12 @@ if [ -f "com.google.android.youtube.apk" ]
 then
     echo "Building Root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               -i swipe-controls \
                                -e microg-support -e enable-wide-searchbar \
                                -a com.google.android.youtube.apk -o build/revanced-root.apk
     echo "Building Non-root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               -i swipe-controls \
                                -e enable-wide-searchbar \
                                -a com.google.android.youtube.apk -o build/revanced-nonroot.apk
 else
@@ -72,8 +74,8 @@ echo "************************************"
 if [ -f "com.google.android.apps.youtube.music.apk" ]
 then
     echo "Building Root APK"
-    java -jar revanced-cli.jar -b revanced-patches.jar \
-                               -e custom-branding -e microg-support \
+    java -jar revanced-cli.jar --experimental -b revanced-patches.jar \
+                               -e microg-support \
                                -a com.google.android.apps.youtube.music.apk -o build/revanced-music-root.apk
 #    echo "Building Non-root APK"
 #    java -jar revanced-cli.jar -b revanced-patches.jar \
