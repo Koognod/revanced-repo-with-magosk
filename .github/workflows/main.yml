@@ -54,8 +54,8 @@ jobs:
           automatic_release_tag: "17.27.31"
           title: "Release ${{ env.date_now }}"
           files: |
-            ReVanced-v17.27.39-MagiskModule.zip
-            ReVancedMusic-v5.14.53-MagiskModule.zip
+            ReVanced-v17.28.34-MagiskModule.zip
+            ReVancedMusic-v5.16.51-MagiskModule.zip
             build/revanced-nonroot-signed.apk
             vanced-microG.apk
             build/apk-SHA-256.txt

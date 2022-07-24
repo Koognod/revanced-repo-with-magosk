@@ -7,11 +7,11 @@ cp com.google.android.youtube.apk revanced-magisk-template
 
 cd revanced-magisk-template
 
-zip -r ReVanced-v17.27.39-MagiskModule.zip ./*
+zip -r ReVanced-v17.28.34-MagiskModule.zip ./*
 
 cd ..
 
-cp revanced-magisk-template/ReVanced-v17.27.39-MagiskModule.zip .
+cp revanced-magisk-template/ReVanced-v17.28.34-MagiskModule.zip .
 
 rm -rf revanced-magisk-template
 
@@ -22,10 +22,10 @@ cp com.google.android.apps.youtube.music.apk revanced-magisk-template
 
 cd revanced-magisk-template
 
-zip -r ReVancedMusic-v5.14.53-MagiskModule.zip ./*
+zip -r ReVancedMusic-v5.16.51-MagiskModule.zip ./*
 
 cd ..
 
-cp revanced-magisk-template/ReVancedMusic-v5.14.53-MagiskModule.zip .
+cp revanced-magisk-template/ReVancedMusic-v5.16.51-MagiskModule.zip .
 
 rm -rf revanced-magisk-template
