@@ -58,6 +58,8 @@ jobs:
             ReVancedMusic-v5.16.51-MagiskModule.zip
             build/revanced-nonroot-signed.apk
             build/revanced-music-nonroot-signed.apk
+            build/reddit-signed.apk
+            build/twitter-signed.apk
             vanced-microG.apk
             build/apk-SHA-256.txt
             build/MagiskModule-SHA-256.txt

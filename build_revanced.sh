@@ -4,10 +4,8 @@
 # YouTube Music 5.16.51
 # YouTube 17.29.34
 # Vanced microG 0.2.24.220220
-
-YTM_VERSION="5.16.51"
-YT_VERSION="17.29.34"
-VMG_VERSION="0.2.24.220220"
+# Twitter 9.52.0-release.0
+# Reddit 2022.27.1
 
 # Artifacts associative array aka dictionary
 declare -A artifacts
@@ -82,4 +80,28 @@ then
                                -a com.google.android.apps.youtube.music.apk -o build/revanced-music-nonroot.apk
 else
    echo "Cannot find YouTube Music APK, skipping build"
+fi
+
+echo ""
+echo "************************************"
+echo "Building Twitter APK"
+echo "************************************"
+if [ -f "com.twitter.android.apk" ]
+then
+    java -jar revanced-cli.jar -b revanced-patches.jar \
+                               -a com.twitter.android.apk -o build/twitter.apk
+else
+   echo "Cannot find Twitter APK, skipping build"
+fi
+
+echo ""
+echo "************************************"
+echo "Building Reddit APK"
+echo "************************************"
+if [ -f "com.reddit.frontpage.apk" ]
+then
+    java -jar revanced-cli.jar -b revanced-patches.jar -r \
+                               -a com.reddit.frontpage.apk -o build/reddit.apk
+else
+   echo "Cannot find Reddit APK, skipping build"
 fi
