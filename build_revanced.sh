@@ -5,7 +5,7 @@
 # YouTube 17.29.34
 # Vanced microG 0.2.24.220220
 # Twitter 9.52.0-release.0
-# Reddit 2022.27.1
+# Reddit 2022.28.0
 
 # Artifacts associative array aka dictionary
 declare -A artifacts
