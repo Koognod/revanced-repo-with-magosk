@@ -53,8 +53,8 @@ if [ -f "com.google.android.youtube.apk" ]
 then
     echo "Building Root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               -i swipe-controls \
-                               -e microg-support -e enable-wide-searchbar -e compact-header -e hdr-auto-brightness -e hdr-auto-brightness -e force-vp9-codec -e timeline-ads -e tasteBuilder-remover -e hide-get-premium -e upgrade-button-remover -e background-play -e music-video-ads -e codecs-unlock -e exclusive-audio-playback -e seekbar-tapping -e minimized-playback -e disable-create-button -e return-youtube-dislike -e premium-heading -e custom-branding -e disable-fullscreen-panels -e old-quality-layout -e hide-shorts-button -e hide-watermark -e sponsorblock -e custom-playback-speed -e video-ads -e general-ads -e hide-infocard-suggestions \
+                               -i swipe-controls enable-wide-searchbar -i compact-header -i hdr-auto-brightness -i hdr-auto-brightness -i force-vp9-codec -i timeline-ads -i tasteBuilder-remover -i hide-get-premium -i upgrade-button-remover -i background-play -i music-video-ads -i codecs-unlock -i exclusive-audio-playback -i seekbar-tapping -i minimized-playback -i disable-create-button -i return-youtube-dislike -i premium-heading -i custom-branding -i disable-fullscreen-panels -i old-quality-layout -i hide-shorts-button -i hide-watermark -i sponsorblock -i custom-playback-speed -i video-ads -i general-ads -i hide-infocard-suggestions \
+                               -e microg-support \
                                -a com.google.android.youtube.apk -o build/revanced-root.apk
     echo "Building Non-root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
